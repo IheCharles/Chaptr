@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/bla"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent">
+    </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="110dp"
+
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView_popupblur"
+                android:layout_width="0dp"
+                android:scaleType="centerCrop"
+                android:layout_height="0dp">
+            </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView_popup"
+            android:layout_width="70dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="3dp"
+            android:layout_height="70dp"
+            android:clickable="true"
+            app:civ_border_color="@color/cardview_light_background"
+            app:civ_border_width="0.5dp"/>
+
+            <TextView
+                android:id="@+id/textView_popcat"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:layout_height="wrap_content"
+                 />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:id="@+id/irart"
+                android:layout_marginTop="6dp"
+                android:background="@color/in"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:id="@+id/textView_pop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="3dp"
+                    android:paddingStart="3dp"
+                    android:background="@color/in"
+                  />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        </RelativeLayout>
+</RelativeLayout>

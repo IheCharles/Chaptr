@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fffffe</color>
+    <color name="Colo">#fffffe</color>
+    <color name="colorPrimaryDark">#45000000</color>
+    <color name="colorAccent">#45000000</color>
+    <color name="in">#00ffffff</color>
+    <color name="trans">#67ffffff</color>
+    <color name="cal">#e2e1e1</color>
+    <color name="goodgrey">#bdbdbd</color>
+    <color name="textcolor">#805e28</color>
+    <color name="disc">#b1ffffff</color>
+    <color name="lightbrown">#e0cfa3</color>
+    <color name="Pale_Yellow">#ff5722</color>
+    <color name="Pale_Orange">#ff3d00</color>
+    <color name="transgrey">#064f4f4f</color>
+</resources>

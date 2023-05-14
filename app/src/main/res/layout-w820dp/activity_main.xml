@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dev.textnet.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/in"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageview_propicicon"
+                android:layout_width="34.5dp"
+                android:layout_height="34.5dp"
+                android:layout_gravity="end|center_vertical"
+                app:civ_border_color="#fffffe"
+                app:civ_border_width="0.5dp"
+
+
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed"
+            android:id="@+id/relativeview_main"
+            android:layout_height="53dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/card_view2_circle"
+                android:background="#fffffe"
+                android:layout_width="match_parent"
+                android:layout_height="53dp" >
+            </android.support.v7.widget.RecyclerView>
+
+                <ImageButton
+                    android:id="@+id/cardview2_cardview_bbb"
+                    android:layout_width="40dp"
+                    android:layout_height="53dp"
+                    android:background="@color/Colo"
+                    android:layout_gravity="center"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/ic_chevron_right_black_24dp2" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <com.dev.textnet.NonSwipeableViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#fffffe"
+        android:id="@+id/bottomnav"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</android.support.design.widget.CoordinatorLayout>

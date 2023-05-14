@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:design="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/typing_scrolview"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardMaxElevation="0dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardCornerRadius="10dp">
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar_typing"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imageView_typing"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:scaleType="centerCrop"
+                    android:clickable="true" />
+
+
+                <EditText
+                    android:id="@+id/editText_typing"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+
+                    android:hint="Title"
+
+                    android:paddingTop="1dp"
+                    android:maxLines="2"
+
+                    android:background="@null"
+                    android:textSize="25sp"
+                    android:typeface="serif"
+                     />
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_typing"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/in"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme" />
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:id="@+id/linearlayout_audiopreview">
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/imageButton_previewplay"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@color/in"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+                <SeekBar
+                    android:id="@+id/seekBar_preview"
+                    style="@style/Widget.AppCompat.SeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:progress="3" />
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/imageButton_cancelmusic"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:background="@color/in"
+                   android:layout_alignParentEnd="true"
+
+                    app:srcCompat="@drawable/ic_cancel_black_24dp" />
+
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardPreventCornerOverlap="false"
+                app:cardMaxElevation="0dp"
+                app:cardElevation="0dp"
+                android:id="@+id/storybackcolor"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="7dp">
+                <EditText
+                    android:id="@+id/editTextstory_typing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="story"
+                 />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+    </LinearLayout>

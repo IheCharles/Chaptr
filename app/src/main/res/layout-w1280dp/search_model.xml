@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:clickable="true"
+    android:background="@color/Colo"
+    android:id="@+id/worst"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_allfollowers_model"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="5dp" />
+
+
+    <TextView
+        android:id="@+id/textView_allfollowers_model"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="55dp"
+        android:paddingTop="7dp"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:text="Carly" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="23dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView_searchmodel_follower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/goodgrey"
+        android:text="12K" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/goodgrey"
+            android:text=" Followers" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textColor="@color/goodgrey"
+            android:text="•" />
+    <TextView
+        android:id="@+id/textView_searchmodel_posts"
+        android:layout_width="wrap_content"
+        android:textColor="@color/goodgrey"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="23K" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/goodgrey"
+            android:text=" Posts" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView_searchmodel_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="55dp"
+        android:textSize="15sp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="Carly" />
+    </LinearLayout>
+
+</RelativeLayout>

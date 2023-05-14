@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/tools"
+    android:background="@drawable/df"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_editableprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_editableprofile"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#C1FFC1"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_photo_camera_white_24dp" />
+
+
+
+        <EditText
+            android:id="@+id/editText_editableprofie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:typeface="serif"
+            android:layout_gravity="center"
+            android:inputType="textMultiLine"
+            android:hint="Say something about yourself"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="#218868"
+            app:cardCornerRadius="25dp">
+
+
+
+            <TextView
+                android:id="@+id/Saveprofile_editableprofile"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Save Profile"
+                android:clickable="true"
+                android:textColor="#003300"
+                android:typeface="serif"
+                android:gravity="center"
+                android:textSize="30dp"/>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="#218868"
+            app:cardCornerRadius="25dp">
+
+
+
+            <TextView
+                android:id="@+id/signOut"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Sign out"
+                android:clickable="true"
+                android:textColor="#003300"
+                android:typeface="serif"
+                android:gravity="center"
+                android:textSize="30dp"/>
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+  </LinearLayout>

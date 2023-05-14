@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="45dp"
+    android:paddingStart="45dp"
+    android:background="@drawable/dialog_bg">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/cal"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/dialoglogout"
+            android:background="@color/Colo"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="top">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/textView5_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:text="Logout"
+                android:textColor="#FFBDBDBD"
+                android:textSize="21sp" />
+
+            <ImageButton
+                android:id="@+id/imagebutton_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/in"
+                android:layout_marginStart="70dp"
+                app:srcCompat="@drawable/ic_exit_to_app_black_24dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_viewdialoglog_out"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:progressDrawable="@android:color/holo_blue_dark"
+                    android:progressTint="@android:color/holo_blue_dark" />
+            </RelativeLayout>
+
+        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@android:color/background_light"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#FFBDBDBD"
+                android:textSize="21sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/dialogsoung"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@color/Colo"
+            android:layout_gravity="top">
+
+            <TextView
+                android:id="@+id/textView_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="#FFBDBDBD"
+                android:textSize="21sp" />
+
+            <ImageButton
+                android:id="@+id/logoutf_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/in" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

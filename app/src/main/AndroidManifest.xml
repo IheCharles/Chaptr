@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dev.textnet">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:largeHeap="false"
+
+        android:adjustViewBounds="true"
+        android:name="com.dev.textnet.Offline_cap"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.dev.textnet.CustomImageSizeGlideModule"
+            android:value="GlideModule" />
+
+
+        <activity android:name="com.dev.textnet.Typing"
+            android:screenOrientation="portrait"
+      android:windowSoftInputMode="adjustResize">
+
+        </activity>
+
+        <activity android:name="com.dev.textnet.popup" android:theme="@style/Transparent">
+            android:screenOrientation="portrait"
+        </activity>
+
+        <activity android:name="com.dev.textnet.comments" android:theme="@style/Transparent">
+            android:screenOrientation="portrait"
+
+        </activity>
+
+        <activity android:name="com.dev.textnet.status" android:theme="@style/Transparent">
+            android:screenOrientation="portrait"
+        </activity>
+
+        <activity android:name="com.dev.textnet.Not_Availble" android:theme="@style/Transparent">
+            android:screenOrientation="portrait"
+        </activity>
+        <activity android:name="com.dev.textnet.SearchResult"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+
+        <activity android:name="com.dev.textnet.Login.register"
+            android:noHistory="true"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dev.textnet.Userpro.UserProfile"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dev.textnet.MainActivity"
+            android:screenOrientation="portrait"
+         android:windowSoftInputMode="adjustPan"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+
+        <activity android:name="com.dev.textnet.Userpro.UserActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dev.textnet.All_followers"
+
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dev.textnet.UserActivity_3"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dev.textnet.UserActivity_2"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.dev.textnet.View_post"
+            android:theme="@style/AlertDialog.AppCompa."
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.dev.textnet.Login.login"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+
+        <activity
+            android:name="com.dev.textnet.Splash_Activity"
+            android:noHistory="true"
+            android:theme="@style/SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

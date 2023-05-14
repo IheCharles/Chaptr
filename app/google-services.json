@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "41857169103",
+    "firebase_url": "https://textnet-fabf1.firebaseio.com",
+    "project_id": "textnet-fabf1",
+    "storage_bucket": "textnet-fabf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41857169103:android:76929b3361d69281",
+        "android_client_info": {
+          "package_name": "com.dev.textnet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41857169103-b26tkk0kvhij8aq96jeiubtifsg87bn1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.textnet",
+            "certificate_hash": "3db03794eaa9d3bb6836e8beb83121030aaeed0d"
+          }
+        },
+        {
+          "client_id": "41857169103-066333phno8t83gh7lreg6ic1upe164g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABVBuiYQT-G3YTXHeX6hmZufrW6qFjYyM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41857169103-066333phno8t83gh7lreg6ic1upe164g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

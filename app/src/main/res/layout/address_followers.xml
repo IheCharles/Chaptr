@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#fffffe"
+            app:cardMaxElevation="0dp"
+            android:id="@+id/set"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="16dp"
+            android:layout_marginEnd="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/address_imagecircle"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        app:civ_border_color="#FF000000" />
+
+
+                    <TextView
+                        android:id="@+id/share_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="17sp"
+                        android:textColor="#ff000000"
+                        />
+
+                </RelativeLayout>
+
+            <EditText
+                android:id="@+id/address_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="55dp"
+                android:textSize="16sp"
+                android:textColor="#ff000000"
+                android:background="@color/in"
+                android:maxLines="14"
+                android:gravity="top|start"
+                android:scrollbars="vertical" />
+
+                <TextView
+                    android:id="@+id/textView_share_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="bottom|end"
+                    android:textSize="12sp"
+                    android:textColor="#ff000000"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="40dp"
+            android:id="@+id/address_cardviewpost"
+            android:layout_height="40dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#fffffe"
+            app:cardMaxElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="20dp"
+            android:layout_alignBottom="@+id/set"
+            android:layout_alignParentEnd="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/progressBar_adress"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressTint="#ae7d3d" />
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/address_imagebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/in"
+                    app:srcCompat="@drawable/ic_send_black_24dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>

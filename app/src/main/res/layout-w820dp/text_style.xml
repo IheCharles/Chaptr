@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="35dp"
+    app:cardBackgroundColor="@color/disc"
+    android:paddingStart="35dp"
+    android:background="@drawable/dialog_bg">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/disc"
+        app:cardMaxElevation="0dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="330dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            android:scrollbars="horizontal">
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="top"
+                    android:background="@color/in">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/in"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/serif_tv"
+                        android:text="Serif"
+                        android:textSize="30sp"
+                        android:typeface="serif" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_serif"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="top"
+                    android:background="@color/in">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/in"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Normal"
+                        android:textSize="30sp"
+                        android:typeface="normal" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_normal"
+                        android:layout_width="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_monospace"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/in">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/in"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:id="@+id/monospace_tv"
+                        android:text="MonoSpace"
+                        android:textSize="30sp"
+                        android:typeface="monospace" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_monospace"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearlayout__sans"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="@color/in">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/in"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/cursive_tv"
+                    android:text="Dancing-Script"
+                    android:textSize="30sp" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBox_sans"
+                    android:paddingEnd="6dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_Amatic_Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/in">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Amatic_Bold"
+                        android:background="@color/in"
+                        android:fontFamily="sans-serif"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Amatic-Bold"
+                        android:textSize="23sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_Amatic_Bold"
+                        android:layout_width="wrap_content"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_Amatic_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/in">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Amatic_Regular"
+                        android:background="@color/in"
+                        android:fontFamily="sans-serif"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Amatic"
+                        android:textSize="27sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_Amatic_Regular"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_Capture"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/in">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Capture"
+                        android:background="@color/in"
+                        android:fontFamily="sans-serif"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Capture"
+                        android:textSize="26sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_Capture"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_Caviar_Dreams_Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/in">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Caviar_Dreams_Bold"
+                        android:background="@color/in"
+                        android:fontFamily="sans-serif"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Caviar_Dreams_Bold"
+                        android:textSize="18.5sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_Caviar_Dreams_Bold"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_Caviar_Dreams"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/in">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Caviar_Dreams"
+                        android:background="@color/in"
+                        android:fontFamily="sans-serif"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Caviar_Dreams"
+                        android:textSize="25sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_Caviar_Dreams"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_Ostrich"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/in">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Ostrich"
+                        android:background="@color/in"
+                        android:fontFamily="sans-serif"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Ostrich"
+                        android:textSize="25sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_Ostrich"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_OstrichSans"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/in">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/OstrichSans"
+                        android:background="@color/in"
+                        android:fontFamily="sans-serif"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="OstrichSans"
+                        android:textSize="25sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_OstrichSans"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearlayout_PlayfairDisplay_Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/in">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/PlayfairDisplay_Bold"
+                        android:background="@color/in"
+                        android:fontFamily="sans-serif"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Playfair-Bold"
+                        android:textSize="25sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox_PlayfairDisplay_Bold"
+                        android:paddingEnd="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/linearlayout_PlayfairDisplay_Italic"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="@color/in">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cursive_PlayfairDisplay_Italic"
+                    android:background="@color/in"
+                    android:fontFamily="sans-serif"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Playfair_Italic"
+                    android:textSize="25sp" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBox_PlayfairDisplay_Italic"
+                    android:paddingEnd="6dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout><RelativeLayout
+            android:id="@+id/linearlayout_Respective"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@color/in">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cursive_Respective"
+                android:background="@color/in"
+                android:fontFamily="sans-serif"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Respective"
+                android:textSize="25sp" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox_Respective"
+                android:paddingEnd="6dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+            <RelativeLayout
+            android:id="@+id/linearlayout_Pacifico"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@color/in">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cursive_Pacifico"
+                android:background="@color/in"
+                android:fontFamily="sans-serif"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Pacifico"
+                android:textSize="25sp" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox_Pacifico"
+                android:paddingEnd="6dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

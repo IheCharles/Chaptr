@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/viewpost_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/textView_deletenotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:textColor="#fffffe"
+        android:text="This post is no longer available" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main.appbar_viewpost"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/in"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/in"
+            android:fitsSystemWindows="true"
+            app:scrimVisibleHeightTrigger="80dp"
+            app:statusBarScrim="@color/in"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:background="@color/in"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            >
+            <ImageView
+                android:id="@+id/imageView_view_post"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_collapseMode="parallax"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/er"
+                app:layout_collapseParallaxMultiplier="@integer/google_play_services_version"
+                android:background="@color/in"
+                android:layout_height="230dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/in" />
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/editText_view_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:layout_gravity="bottom"
+                android:paddingEnd="0dp"
+                app:layout_collapseMode="parallax"
+                android:textSize="25sp"
+                android:typeface="serif" />
+
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+
+        android:id="@+id/nested"
+
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+
+
+            android:descendantFocusability="blocksDescendants"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:animateLayoutChanges="true"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/relativeLayout_seekholder"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+            <SeekBar
+                android:id="@+id/seekBar1"
+                style="@style/Widget.AppCompat.SeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:max="55"
+                android:layout_centerVertical="true"
+                android:progress="3" />
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/imageButton_dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/in"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/linearlayout_dropdown"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/imageButton_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/in"
+                        app:srcCompat="@drawable/ic_access_time_black_24dp" />
+                    <TextView
+                        android:id="@+id/textView_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView_time_static"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Min"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|center_horizontal">
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/imageButton_wordcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/in"
+                        app:srcCompat="@drawable/ic_text_format_black__large_24dp" />
+
+                    <TextView
+                        android:id="@+id/textView_wordcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textView_wordcount_static"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Words"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_viewpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            app:cardMaxElevation="0dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="7dp">
+
+            <TextView
+                android:id="@+id/Textview_view_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="7dp"
+                android:textIsSelectable="true"
+                android:paddingStart="7dp"
+                android:autoLink="web"
+                android:textColorLink="#FF0099CC"
+               />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                app:cardCornerRadius="17dp"
+                android:background="@color/in"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                app:cardMaxElevation="0dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                android:id="@+id/viewpost_cardauthor">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/circleimage_viewpost"
+                    android:layout_width="35dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_height="40dp"
+                    app:civ_border_color="#FF000000" />
+
+                <TextView
+                    android:id="@+id/post_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="40dp"
+                    android:text="Author"
+                    android:paddingEnd="5dp"
+                    android:textSize="12sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/textView6_77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingEnd="5dp"
+
+                    android:background="@color/in" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/imageButtonlove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/in"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_favorite_like_24dp"  />
+
+
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/imageButton_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/in"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_comment_black_24dp" />
+
+
+
+
+                <android.support.v7.widget.AppCompatImageButton
+                    android:id="@+id/imageButton_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/in"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_share_black_24dp" />
+
+
+
+
+
+        </LinearLayout>
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-7130924913011088/7508636150">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

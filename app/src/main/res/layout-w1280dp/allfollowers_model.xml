@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="4dp"
+    android:clickable="true"
+    android:id="@+id/worst"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_allfollowers_model"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="5dp" />
+
+
+    <TextView
+        android:id="@+id/textView_allfollowers_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="45dp"
+        android:paddingTop="6dp"
+        android:textSize="16sp"
+        android:text="Carly" />
+</RelativeLayout>

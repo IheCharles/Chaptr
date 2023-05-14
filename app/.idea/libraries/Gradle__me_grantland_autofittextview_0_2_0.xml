@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: me.grantland:autofittextview-0.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3/caches/transforms-1/files-1.1/autofittextview-0.2.0.aar/6cbf9cb1a04c4d4040fdbb26a584dd79/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3/caches/transforms-1/files-1.1/autofittextview-0.2.0.aar/6cbf9cb1a04c4d4040fdbb26a584dd79/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3/caches/modules-2/files-2.1/me.grantland/autofittextview/0.2.0/add5e1ab57ca9dc93cd35c79c20c7fa786183f51/autofittextview-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/poop"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="false"
+        android:id="@+id/poop2"
+        app:cardElevation="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="7dp"
+        app:cardCornerRadius="12dp"
+        app:cardMaxElevation="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/RC_imageView"
+                        android:layout_width="40dp"
+                        android:layout_marginTop="5dp"
+                        android:clickable="true"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/RC_textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="60dp"
+                        android:layout_marginStart="47dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Carter2k18" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_sharehelp"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="18dp"
+                        android:id="@+id/RC_imagebutton"
+                        android:layout_centerVertical="true"
+                        android:background="@color/in"
+                        app:srcCompat="@drawable/ic_reply_black_24dp" />
+
+                </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+
+                app:cardCornerRadius="12dp"
+
+                app:cardMaxElevation="0dp"
+                app:cardPreventCornerOverlap="false">
+
+                <TextView
+                    android:id="@+id/RC_textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:autoLink="web"
+                    android:gravity="top|start"
+                    android:maxLines="14"
+
+                    android:scrollbars="vertical"
+                    android:text=" Thousands lay, homeless on the chilli streets of London. Fighting off the bitter cold and starvation, without a penny to their name. To them Christmas is just another day of hardship and suffering. It has been long since most of them have felt the warmth of a good fireplace or the taste of a freshly home cooked meal 37 year old Shane Thomas was left with no other option but to leave home at age 15 when his mother walked out and his father turned abusive. Since then he has managed to Bitmap bitmap= blur(getWindow().getDecorView().getRootView());ByteArrayOutputStream stream=new ByteArrayOutputStream();bitmap.compress(Bitmap.CompressFormat.PNG, 100,stream); byte[] bytes=stream.toByteArray();circleimage=findViewById(R.id.RC_imageView);imageButton_com=findViewById(R.id.RC_imagebutton)textView=findViewById(R.id.RC_textView1);textView2=findViewById(R.id.RC_textView2);"
+                    android:textColor="#ff000000"
+                    android:textColorLink="#FF0099CC"
+                    android:textSize="16sp" />
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/RC_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ff000000"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:maxLines="9"
+            android:background="@color/in"
+            android:gravity="top|start"
+            android:scrollbars="vertical"
+            android:hint="reply" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
